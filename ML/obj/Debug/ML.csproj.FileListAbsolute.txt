@@ -1,0 +1,6 @@
+C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\ML\bin\Debug\ML.dll
+C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\ML\bin\Debug\ML.pdb
+C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\ML\obj\Debug\ML.csproj.AssemblyReference.cache
+C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\ML\obj\Debug\ML.csproj.CoreCompileInputs.cache
+C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\ML\obj\Debug\ML.dll
+C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\ML\obj\Debug\ML.pdb
