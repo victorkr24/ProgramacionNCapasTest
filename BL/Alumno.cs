@@ -153,7 +153,7 @@ namespace BL
 
                             SqlParameter[] parameter = new SqlParameter[1];
 
-                            parameter[0] = new SqlParameter("@IdUsuario", SqlDbType.Int);
+                            parameter[0] = new SqlParameter("@IdAlumno", SqlDbType.Int);
                             parameter[0].Value = alumno.IdAlumno;
 
 

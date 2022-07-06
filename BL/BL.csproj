@@ -31,8 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,9 +48,14 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Alumno.cs" />
+    <Compile Include="Materia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DLEF\DLEF.csproj">
+      <Project>{ec29f694-7e1b-4fb8-afed-5c604968b8bf}</Project>
+      <Name>DLEF</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DL\DL.csproj">
       <Project>{4d4657bf-fd3b-4d52-a854-8997c492f4be}</Project>
       <Name>DL</Name>
@@ -54,6 +64,10 @@
       <Project>{d4cfb48b-513e-4682-8526-cabd188cac59}</Project>
       <Name>ML</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
