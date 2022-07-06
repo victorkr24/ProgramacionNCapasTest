@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProgramacionNCapasTestModelStoreContainer" CdmEntityContainer="ProgramacionNCapasTestEntities">
+    <EntitySetMapping Name="Alumno">
+      <EntityTypeMapping TypeName="ProgramacionNCapasTestModel.Alumno">
+        <MappingFragment StoreEntitySet="Alumno">
+          <ScalarProperty Name="IdAlumno" ColumnName="IdAlumno" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Semestre">
+      <EntityTypeMapping TypeName="ProgramacionNCapasTestModel.Semestre">
+        <MappingFragment StoreEntitySet="Semestre">
+          <ScalarProperty Name="IdSemestre" ColumnName="IdSemestre" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AlumnoAdd" FunctionName="ProgramacionNCapasTestModel.Store.AlumnoAdd" />
+    <FunctionImportMapping FunctionImportName="AlumnoDelete" FunctionName="ProgramacionNCapasTestModel.Store.AlumnoDelete" />
+    <FunctionImportMapping FunctionImportName="AlumnoGetAll" FunctionName="ProgramacionNCapasTestModel.Store.AlumnoGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProgramacionNCapasTestModel.AlumnoGetAll_Result">
+          <ScalarProperty Name="IdAlumno" ColumnName="IdAlumno" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AlumnoGetById" FunctionName="ProgramacionNCapasTestModel.Store.AlumnoGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProgramacionNCapasTestModel.AlumnoGetById_Result">
+          <ScalarProperty Name="IdAlumno" ColumnName="IdAlumno" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AlumnoUpdate" FunctionName="ProgramacionNCapasTestModel.Store.AlumnoUpdate" />
+    <FunctionImportMapping FunctionImportName="MateriaAdd" FunctionName="ProgramacionNCapasTestModel.Store.MateriaAdd" />
+    <FunctionImportMapping FunctionImportName="MateriaDelete" FunctionName="ProgramacionNCapasTestModel.Store.MateriaDelete" />
+    <FunctionImportMapping FunctionImportName="MateriaGetAll" FunctionName="ProgramacionNCapasTestModel.Store.MateriaGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProgramacionNCapasTestModel.MateriaGetAll_Result">
+          <ScalarProperty Name="IdMateria" ColumnName="IdMateria" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="Creditos" ColumnName="Creditos" />
+          <ScalarProperty Name="IdSemestre" ColumnName="IdSemestre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MateriaGetById" FunctionName="ProgramacionNCapasTestModel.Store.MateriaGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProgramacionNCapasTestModel.MateriaGetById_Result">
+          <ScalarProperty Name="IdMateria" ColumnName="IdMateria" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="Creditos" ColumnName="Creditos" />
+          <ScalarProperty Name="IdSemestre" ColumnName="IdSemestre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MateriaUpdate" FunctionName="ProgramacionNCapasTestModel.Store.MateriaUpdate" />
+    <EntitySetMapping Name="Materia">
+      <EntityTypeMapping TypeName="ProgramacionNCapasTestModel.Materia">
+        <MappingFragment StoreEntitySet="Materia">
+          <ScalarProperty Name="IdSemestre" ColumnName="IdSemestre" />
+          <ScalarProperty Name="Creditos" ColumnName="Creditos" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdMateria" ColumnName="IdMateria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

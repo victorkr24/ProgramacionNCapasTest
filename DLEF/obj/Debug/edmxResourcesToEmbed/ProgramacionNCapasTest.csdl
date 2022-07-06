@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProgramacionNCapasTestModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Alumno">
+    <Key>
+      <PropertyRef Name="IdAlumno" />
+    </Key>
+    <Property Name="IdAlumno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoPaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="Semestre">
+    <Key>
+      <PropertyRef Name="IdSemestre" />
+    </Key>
+    <Property Name="IdSemestre" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Materia" Relationship="ProgramacionNCapasTestModel.FK__Materia__IdSemes__4D94879B" FromRole="Semestre" ToRole="Materia" />
+  </EntityType>
+  <EntityContainer Name="ProgramacionNCapasTestEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Alumno" EntityType="Self.Alumno" />
+    <EntitySet Name="Semestre" EntityType="Self.Semestre" />
+    <FunctionImport Name="AlumnoAdd">
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="ApellidoPaterno" Mode="In" Type="String" />
+      <Parameter Name="ApellidoMaterno" Mode="In" Type="String" />
+      <Parameter Name="FechaNacimiento" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="AlumnoDelete">
+      <Parameter Name="IdAlumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="AlumnoGetAll" ReturnType="Collection(ProgramacionNCapasTestModel.AlumnoGetAll_Result)" />
+    <FunctionImport Name="AlumnoGetById" ReturnType="Collection(ProgramacionNCapasTestModel.AlumnoGetById_Result)">
+      <Parameter Name="IdAlumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="AlumnoUpdate">
+      <Parameter Name="IdAlumno" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="ApellidoPaterno" Mode="In" Type="String" />
+      <Parameter Name="ApellidoMaterno" Mode="In" Type="String" />
+      <Parameter Name="FechaNacimiento" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="MateriaAdd">
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Costo" Mode="In" Type="String" />
+      <Parameter Name="Creditos" Mode="In" Type="Int32" />
+      <Parameter Name="IdSemestre" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="MateriaDelete">
+      <Parameter Name="IdMateria" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="MateriaGetAll" ReturnType="Collection(ProgramacionNCapasTestModel.MateriaGetAll_Result)" />
+    <FunctionImport Name="MateriaGetById" ReturnType="Collection(ProgramacionNCapasTestModel.MateriaGetById_Result)">
+      <Parameter Name="IdMateria" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="MateriaUpdate">
+      <Parameter Name="IdMateria" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Costo" Mode="In" Type="String" />
+      <Parameter Name="Creditos" Mode="In" Type="Int32" />
+      <Parameter Name="IdSemestre" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="Materia" EntityType="ProgramacionNCapasTestModel.Materia" />
+    <AssociationSet Name="FK__Materia__IdSemes__4D94879B" Association="ProgramacionNCapasTestModel.FK__Materia__IdSemes__4D94879B">
+      <End Role="Semestre" EntitySet="Semestre" />
+      <End Role="Materia" EntitySet="Materia" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="AlumnoGetAll_Result">
+    <Property Type="Int32" Name="IdAlumno" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ApellidoPaterno" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ApellidoMaterno" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="FechaNacimiento" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="AlumnoGetById_Result">
+    <Property Type="Int32" Name="IdAlumno" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ApellidoPaterno" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ApellidoMaterno" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="FechaNacimiento" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="MateriaGetAll_Result">
+    <Property Type="Int32" Name="IdMateria" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Costo" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Creditos" Nullable="true" />
+    <Property Type="Int32" Name="IdSemestre" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="MateriaGetById_Result">
+    <Property Type="Int32" Name="IdMateria" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Costo" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Creditos" Nullable="true" />
+    <Property Type="Int32" Name="IdSemestre" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="Materia">
+    <Key>
+      <PropertyRef Name="IdMateria" />
+    </Key>
+    <Property Name="IdMateria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Costo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Creditos" Type="Int32" />
+    <Property Name="IdSemestre" Type="Int32" />
+    <NavigationProperty Name="Semestre" Relationship="ProgramacionNCapasTestModel.FK__Materia__IdSemes__4D94879B" FromRole="Materia" ToRole="Semestre" />
+  </EntityType>
+  <Association Name="FK__Materia__IdSemes__4D94879B">
+    <End Type="ProgramacionNCapasTestModel.Semestre" Role="Semestre" Multiplicity="0..1" />
+    <End Type="ProgramacionNCapasTestModel.Materia" Role="Materia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Semestre">
+        <PropertyRef Name="IdSemestre" />
+      </Principal>
+      <Dependent Role="Materia">
+        <PropertyRef Name="IdSemestre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
