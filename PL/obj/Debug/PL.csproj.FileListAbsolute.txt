@@ -52,6 +52,7 @@ C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bi
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\Antlr3.Runtime.dll
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\BL.dll
+C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\EntityFramework.dll
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\ML.dll
@@ -64,9 +65,12 @@ C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bi
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\System.Web.WebPages.dll
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\System.Web.WebPages.Razor.dll
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\WebGrease.dll
+C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\DLEF.dll
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\DL.dll
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\BL.pdb
+C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\BL.dll.config
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\ML.pdb
+C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\EntityFramework.xml
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\System.Web.Helpers.xml
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\System.Web.Mvc.xml
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\System.Web.Optimization.xml
@@ -77,6 +81,8 @@ C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bi
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\Newtonsoft.Json.xml
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\Antlr3.Runtime.pdb
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\DLEF.pdb
+C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\DLEF.dll.config
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\DL.pdb
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\es\System.Web.Helpers.resources.dll
 C:\Users\uavil\Documents\Aviles Alvarez Victor Uriel\ProgramacionNcpasTest\PL\bin\es\System.Web.Mvc.resources.dll
